@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+:root {
+    --primary-color: #a11401;
+    --secondary-color: #000000;
+    --text-color: #333333;
+    --background-color: #f5f5f7;
+    --card-background: #ffffff;
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -15,12 +23,11 @@ body {
     margin: 0;    
 } 
 
-
 /*NAV BAR*/
 nav{
 	position: relative;
 	margin: 16px auto 0;
-	width: 500px;
+	width: 600px;
 	height: 50px;
 	background: #141414;
 	border-radius: 8px;
@@ -28,7 +35,7 @@ nav{
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
 nav a{
-	font-size: 15px;
+	font-size: 13px;
 	text-transform: uppercase;
 	color: white;
 	text-decoration: none;
@@ -115,8 +122,139 @@ ul, ol{
 
 
 /*PROJECTS GRID*/
+.cont {
+    max-width: 400px;
+    margin: 2rem auto;
+}
 
-.misproyectos-h3{
+.product-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card__image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-card__image img {
+    transform: scale(1.05);
+}
+
+.product-card__info {
+    padding: 20px;
+    background-color: var(--card-background);
+}
+
+.product-card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.product-card__description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-card_button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card__price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.product-card__btn-source {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+}
+
+.product-card__btn-visit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+}
+
+.product-card__btn-visit:hover {
+    background-color: #ff4e5f;
+}
+
+.product-card__btn-source:hover {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+.source-code:hover {
+    color: black;
+}
+
+@media (max-width: 480px) {
+    .cont {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .product-card__image {
+        height: 200px;
+    }
+
+    .product-card__title {
+        font-size: 1.3rem;
+    }
+
+    .product-card__description {
+        font-size: 0.8rem;
+    }
+
+    .product-card__btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}
+
+.sections{
+    margin-bottom: 50px;
+}
+
+.Titulo{
     margin: 0;
     font-size: 2em;
     color: #FFFFFF;
@@ -157,94 +295,13 @@ ul, ol{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-hr.solid {
-    color: #ffffff;
-    width: 75%;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.elemento h3{
-    margin-top: 5px;
-    margin: 0;
-    font-size: 1.5em;
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 0.5em 0 0 0;
-}
-
-.elemento h6{
-    margin: 5px;
-    font-size: 1em;
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 0.5em 0 0 0;
-}
-
-.elemento-text{
-	color: white;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.elemento button{
-    margin-top: 10px;
-}
-
-.titulo{
-    font-family: "Architects Daughter", cursive;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 40px;
-}
-
-.boton {
-    font-family: "Architects Daughter", cursive;
-    margin-top: 20px;
-    background: #9b050c;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-	width: 100%;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.boton:hover {
-    background: #700208;
-    opacity: 0.9;
-}
-
-.boton-mas {
-    font-family: "Architects Daughter", cursive;
-    background: #9b050c;
-    color: white;
-    padding: 10px 20px;
-	width: 100%;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.boton-mas:hover {
-    background: #700208;
-    opacity: 0.9;
-}
+} 
 
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
     }
     
     .div1 { grid-area: 1 / 2 / 2 / 3; }
@@ -252,50 +309,49 @@ hr.solid {
     .div3 { grid-area: 1 / 4 / 2 / 5; }
     .div4 { grid-area: 2 / 2 / 3 / 3; }
     .div5 { grid-area: 2 / 3 / 3 / 4; }
-    .div6 { grid-area: 2 / 4 / 3 / 5; }
-    .div7 { grid-area: 3 / 3 / 4 / 4; }
 
+.source-code{
+    margin-right: 15px;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag{
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: #66666662;
+    border-radius: 2px;
+    max-width: 100px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+}
 
 /*********REDES***********/
 
-.elemento-container-redes{
-    width: 400px;
-	background-color: #000000;
+.tecnologias{
+    display: flex;
+    justify-content: center;
 }
 
-
-.elemento-redes{
-    border-radius: 25px;
-    margin-top: 25px;
-}
-
-.elemento-img-redes{
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 25px;
-}
-
-.elemento-text-redes{
-	color: white;
-}
-
-.elemento-redes h3{
-    margin-top: 5px;
-    margin: 0;
-    font-size: 1.5em;
-    color: #FFFFFF;
+.tecnologia{
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: #66666662;
+    border-radius: 2px;
+    max-width: 100px;
+    justify-content: center;
     text-align: center;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 0.5em 0 0 0;
+    padding: 10px;
+    font-size: 10px;
+    background: #81818100;
+    transition: 1s ease-in;
 }
 
-.elemento-redes h6{
-    margin: 5px;
-    font-size: 1em;
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 0.5em 0 0 0;
+.tecnologia:hover{
+    background: linear-gradient(265.27deg, #fd8f27 20.55%, #882904 94.17%);
 }

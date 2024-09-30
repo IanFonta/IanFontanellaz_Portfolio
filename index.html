@@ -13,16 +13,13 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Projectos</a></li>  
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#tecnologias">tecnologias</a></li>  
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#otros">Otros</a></li>
                 <li> 
-                    <a href="#"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
-                    <ul>
-                        <li><a href=""><img src="/img/estados-unidos.png" alt=""></a>
-                        </li>
-                    </ul>
+                    <a href="https://github.com/IanFonta"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
                 </li>
             </ul>
             <div class="animation start-home"></div>
@@ -42,129 +39,186 @@
     </section>
 
     <!--GRID ITEMS PROJECTOS-->
-    <section>
-        <h3 class="misproyectos-h3">Mis proyectos</h3>
+    <section class="sections">
+        <h3 id="trabajos" class="Titulo">Mis trabajos</h3>
         <div class="parent">
-            <div class="div1"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/QTools.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>QTOOLS</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Sitio web creado para la utilizacion de herramientas online de forma totalmente gratuita  .</h6>
+            <div class="div1">
+                <div class="cont">
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img class="elemento-img" src="/img/QTools.png" alt="">
+                        </div>
+                        <div class="product-card__info">
+                            <h2 class="product-card__title">QTools</h2><h4 style="color: rgb(92, 92, 92);">En construcción.</h4><br>
+                            <p class="product-card__description">Sitio web creado para la utilizacion de herramientas online de forma totalmente gratuita.</p>
+                            <div class="tags">
+                                <div class="tag">
+                                    <p>PHP</p>
                                 </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
+                                <div class="tag">
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="tag">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="tag">
+                                    <p>MySql</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Frameworks</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Python</p>
+                                </div>
+                            </div>
+                            <div class="product-card_button-row">
+                                <button class="product-card__btn-source"><i class="fa-brands fa-github fa-2xl source-code"></i>Source Code</button>
+                                <button class="product-card__btn-visit">Visitar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="div2"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/InvitacionesOk.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>InvitacionesOK</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Pagina web dedicada a la venta, creacion y personalizacion de invitaciones digitales para casamientos y fiestas de xv.</h6>
+            <div class="div2">
+                <div class="cont">
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img class="elemento-img" src="/img/InvitacionesOk.png" alt="">
+                        </div>
+                        <div class="product-card__info">
+                            <h2 class="product-card__title">InvitacionesOk</h2>
+                            <p class="product-card__description">Pagina web dedicada a la venta, creacion y personalizacion de invitaciones digitales para casamientos y fiestas de xv.</p>
+                            <div class="tags">
+                                <div class="tag">
+                                    <p>PHP</p>
                                 </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
+                                <div class="tag">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="tag">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="tag">
+                                    <p>MySql</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Widgets</p>
+                                </div>
+                            </div>
+                            <div class="product-card_button-row">
+                                <button class="product-card__btn-source"><i class="fa-brands fa-github fa-2xl source-code" style="color: #ffffff;"></i>Source Code</button>
+                                <button class="product-card__btn-visit">Visitar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="div3"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/Gister.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>Gister</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Web app dedicada a la facilitación del trabajo de licenciados en seguridad e higiene con herramientas.</h6>
+            <div class="div3">
+                <div class="cont">
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img class="elemento-img" src="/img/Gister.png" alt="">
+                        </div>
+                        <div class="product-card__info">
+                            <h2 class="product-card__title">Gister</h2><h4 style="color: rgb(92, 92, 92);">En construcción.</h4><br>
+                            <p class="product-card__description">Web app dedicada a la facilitación del trabajo de licenciados en seguridad e higiene con herramientas.</p>
+                            <div class="tags">
+                                <div class="tag">
+                                    <p>PHP</p>
                                 </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
+                                <div class="tag">
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="tag">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="tag">
+                                    <p>MySql</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Frameworks</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Widgets</p>
+                                </div>
+                            </div>
+                            <div class="product-card_button-row">
+                                <button class="product-card__btn-source"><i class="fa-brands fa-github fa-2xl source-code" style="color: #ffffff;"></i>Source Code</button>
+                                <button class="product-card__btn-visit">Visitar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="div4"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/Success.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>Success</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Pagina web de agencia dedicada al marketing y desarrollo de pequeñas empresas.</h6>
+            <div class="div4">
+                <div class="cont">
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img class="elemento-img" src="/img/Success.png" alt="">
+                        </div>
+                        <div class="product-card__info">
+                            <h2 class="product-card__title">Success</h2><h4 style="color: rgb(92, 92, 92);">En construcción.</h4><br>
+                            <p class="product-card__description">Pagina web de agencia dedicada al marketing y desarrollo de pequeñas empresas.</p>
+                            <div class="tags">
+                                <div class="tag">
+                                    <p>Wordpress</p>
                                 </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
+                                <div class="tag">
+                                    <p>WooCommerce</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Elementor</p>
+                                </div>
+                                <div class="tag">
+                                    <p>MySql</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Frameworks</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Widgets</p>
+                                </div>
+                            </div>
+                            <div class="product-card_button-row">
+                                <button class="product-card__btn-source"><i class="fa-brands fa-github fa-2xl source-code" style="color: #ffffff;"></i>Source Code</button>
+                                <button class="product-card__btn-visit">Visitar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="div5"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/Global.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>Global</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Pagina dedicada a la libre información, distribuyendo libros sobre programación en PDF de forma gratuita y legal.</h6>
-                                </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
-                            </div>
+            <div class="div5">
+                <div class="cont">
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img class="elemento-img" src="/img/Gister.png" alt="">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="div6"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/QTools.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>QTOOLS</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Sitio web creado para la utilizacion de herramientas online de forma totalmente gratuita  .</h6>
+                        <div class="product-card__info">
+                            <h2 class="product-card__title">Interseguridad</h2><h4 style="color: rgb(92, 92, 92);">En construcción.</h4><br>
+                            <p class="product-card__description">Web app dedicada a la facilitación del trabajo de licenciados en seguridad e higiene con herramientas.</p>
+                            <div class="tags">
+                                <div class="tag">
+                                    <p>Wordpress</p>
                                 </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
+                                <div class="tag">
+                                    <p>Elementor</p>
+                                </div>
+                                <div class="tag">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="tag">
+                                    <p>Colibri</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="div7"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento" style="border: none;">
-                            <div class="elemento-container">
-                                <a href="/Web/QrGenerator/index.html" class="boton-mas">Ver más</a>
+                            <div class="product-card_button-row">
+                                <button class="product-card__btn-source"><i class="fa-brands fa-github fa-2xl source-code" style="color: #ffffff;"></i>Source Code</button>
+                                <button class="product-card__btn-visit">Visitar</button>
                             </div>
                         </div>
                     </div>
@@ -172,135 +226,17 @@
             </div>
         </div>
     </section>
-
-    <section>
-        <h3 class="misproyectos-h3">Redes de contacto</h3>
-        <div class="parent">
-            <div class="div1"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento-redes">
-                            <div class="elemento-container-redes">
-                                <img class="elemento-img-redes" src="/img/Github.png" alt="">
-                                <div class="elemento-text-redes">
-                                    <h3>Github</h3>
-                                    <h6>Sitio web creado para la utilizacion de herramientas online de forma totalmente gratuita  .</h6>
-                                    <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="div2"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/LinkedIn.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>LinkedIn</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Pagina web dedicada a la venta, creacion y personalizacion de invitaciones digitales para casamientos y fiestas de xv.</h6>
-                                </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="div3"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/Freelancer.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>Gister</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Web app dedicada a la facilitación del trabajo de licenciados en seguridad e higiene con herramientas.</h6>
-                                </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="div4"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/Sitio web.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>Success</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Pagina web de agencia dedicada al marketing y desarrollo de pequeñas empresas.</h6>
-                                </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="div5"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/Email.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>Global</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Pagina dedicada a la libre información, distribuyendo libros sobre programación en PDF de forma gratuita y legal.</h6>
-                                </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="div6"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento">
-                            <div class="elemento-container">
-                                <img class="elemento-img" src="/img/Discord.png" alt="">
-                                <div class="elemento-text">
-                                    <h3>QTOOLS</h3>
-                                    <div class="divider">
-                                        <hr class="solid">
-                                    </div>
-                                    <h6>Sitio web creado para la utilizacion de herramientas online de forma totalmente gratuita  .</h6>
-                                </div>
-                                <a href="/Web/QrGenerator/index.html" class="boton">Visitar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="div7"> 
-                <div class="centrado">
-                    <div class="columna">
-                        <div class="elemento" style="border: none;">
-                            <div class="elemento-container">
-                                <a href="/Web/QrGenerator/index.html" class="boton-mas">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="redes">
+        <h3 class="Titulo" id="tecnologias">tecnologias que utilizo</h3>
+        <div class="tecnologias">
+            <div class="tecnologia"> <a href=""><i style="font-size: 80px; color: white;" class="fa-brands fa-html5"></i></a></div>
+            <div class="tecnologia"> <a href=""><i style="font-size: 80px; color: white;" class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="tecnologia"> <a href=""><i style="font-size: 80px; color: white;" class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="tecnologia"> <a href=""><i style="font-size: 80px; color: white;" class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="tecnologia"> <a href=""><i style="font-size: 80px; color: white;" class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="tecnologia"> <a href=""><i style="font-size: 80px; color: white;" class="fa-brands fa-linkedin-in"></i></a></div>
         </div>
     </section>
-
     </main>
     
 </body>
