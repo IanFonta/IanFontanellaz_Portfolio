@@ -262,7 +262,17 @@ ul, ol{
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.5em;
-    padding: 0.5em 0 0 0;
+}
+
+.sub-titulo{
+    margin-bottom: 30px;
+    margin-top: 80px;
+    font-size: 2em;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
 }
 
 .centrado {
@@ -336,22 +346,86 @@ ul, ol{
 .tecnologias{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.tecnologia:hover {
+    background-position: 100% 0;
+    moz-transition: all 4s ease-in-out;
+    -o-transition: all 4s ease-in-out;
+    -webkit-transition: all 5s ease-in-out;
+    transition: all 4s ease-in-out;
 }
 
-.tecnologia{
-    margin-right: 5px;
+.tecnologia:focus {
+    outline: none;
+}
+
+.tecnologia {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
     margin-bottom: 10px;
-    background-color: #66666662;
-    border-radius: 2px;
-    max-width: 100px;
-    justify-content: center;
-    text-align: center;
     padding: 10px;
+    max-width: 150px;
+    border-radius: 2px;
     font-size: 10px;
-    background: #81818100;
-    transition: 1s ease-in;
+    font-weight: 600;
+    color: #fff;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
-.tecnologia:hover{
-    background: linear-gradient(265.27deg, #fd8f27 20.55%, #882904 94.17%);
+.tecnologia:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.tecnologia:focus {
+    outline: none;
+}
+
+.tecnologia.color-1 {
+    background-image: linear-gradient(to right, #e4552d, #f06a32, #d45004, #f7851c);
+    box-shadow: 0 4px 15px 0 #973911;
+}
+.tecnologia.color-2 {
+    background-image: linear-gradient(to right, #2545db, #265aea, #3a64d6, #284492);
+    box-shadow: 0 4px 15px 0 #0f2791;
+}
+.tecnologia.color-3 {
+    background-image: linear-gradient(to right, #eacc36, #e6ce5a, #f7dd5d, #bda52c);
+    box-shadow: 0 4px 15px 0 #2e280a;
+}
+.tecnologia.color-4 {
+    background-image: linear-gradient(to right, #7e82b8, #474c8b, #565a97, #7238b4);
+    box-shadow: 0 4px 15px 0 #1d248d;
+}
+
+.tecnologia.color-5 {
+    background-image: linear-gradient(to right, #10f4ff, #22d5df, #43c2c9, #278d92);
+    box-shadow: 0 4px 15px 0 #000733;
+}
+.tecnologia.color-6 {
+    background-image: linear-gradient(to right, #00628c, #0c597a, #19485c, #0a3e55);
+    box-shadow: 0 4px 15px 0 #04435e;
+}
+.tecnologia.color-7 {
+    background-image: linear-gradient(to right, #28799e, #2c6d8b, #2b586d, #1d4253);
+    box-shadow: 0 4px 15px 0 #173f52;
+}
+.tecnologia.color-8 {
+    background-image: linear-gradient(to right, #5960bd, #474c8b, #333770, #20234d);
+    box-shadow: 0 4px 15px 0 #2e336e;
+}
+.tecnologia.color-9 {
+    background-image: linear-gradient(to right, #87d030, #8bc446, #76a73a, #448a43);
+    box-shadow: 0 4px 15px 0 #2e4b0a;
 }
